@@ -97,23 +97,23 @@ const images = [
     title: "Murmúrios, Chapitô — 2026"
   },
   {
-    thumb: "img/2026murmurios/thumbs/thumb_26.jpg",
-    full:  "img/2026murmurios/full/full_26.jpg",
+    thumb: "img/2026murmurios/thumbs/thumb_16.jpg",
+    full:  "img/2026murmurios/full/full_16.jpg",
     title: "Murmúrios, Chapitô — 2026"
   },
   {
-    thumb: "img/2026murmurios/thumbs/thumb_37.jpg",
-    full:  "img/2026murmurios/full/full_37.jpg",
+    thumb: "img/2026murmurios/thumbs/thumb_19.jpg",
+    full:  "img/2026murmurios/full/full_19.jpg",
     title: "Murmúrios, Chapitô — 2026"
   },
   {
-    thumb: "img/2026murmurios/thumbs/thumb_41.jpg",
-    full:  "img/2026murmurios/full/full_41.jpg",
+    thumb: "img/2026murmurios/thumbs/thumb_22.jpg",
+    full:  "img/2026murmurios/full/full_22.jpg",
     title: "Murmúrios, Chapitô — 2026"
   },
   {
-    thumb: "img/2026murmurios/thumbs/thumb_54.jpg",
-    full:  "img/2026murmurios/full/full_54.jpg",
+    thumb: "img/2026murmurios/thumbs/thumb_31.jpg",
+    full:  "img/2026murmurios/full/full_31.jpg",
     title: "Murmúrios, Chapitô — 2026"
   },
   {
@@ -140,6 +140,45 @@ const images = [
     thumb: "img/2024frio/thumbs/thumb_18.jpg",
     full:  "img/2024frio/full/full_18.jpg",
     title: "Frio, Norte Europa — 2024"
+  },
+   {
+    thumb: "img/2026calor/thumbs/thumb_02.jpg",
+    full:  "img/2026calor/full/full_02.jpg",
+    title: "Calor, Andaluzia — 2026"
+  },
+  {
+    thumb: "img/2026calor/thumbs/thumb_04.jpg",
+    full:  "img/2026calor/full/full_04.jpg",
+    title: "Calor, Andaluzia — 2026"
+  },
+  {
+    thumb: "img/2026calor/thumbs/thumb_06.jpg",
+    full:  "img/2026calor/full/full_06.jpg",
+    title: "Calor, Andaluzia — 2026"
+  },
+  {
+    thumb: "img/2026calor/thumbs/thumb_11.jpg",
+    full:  "img/2026calor/full/full_11.jpg",
+    title: "Calor, Andaluzia — 2026"
+  },
+  {
+    thumb: "img/2026calor/thumbs/thumb_16.jpg",
+    full:  "img/2026calor/full/full_16.jpg",
+    title: "Calor, Andaluzia — 2026"
+  },
+  {
+    thumb: "img/2026calor/thumbs/thumb_27.jpg",
+    full:  "img/2026calor/full/full_27.jpg",
+    title: "Calor, Andaluzia — 2026"
+  },{
+    thumb: "img/2026calor/thumbs/thumb_28.jpg",
+    full:  "img/2026calor/full/full_28.jpg",
+    title: "Calor, Andaluzia — 2026"
+  },
+  {
+    thumb: "img/2026calor/thumbs/thumb_35.jpg",
+    full:  "img/2026calor/full/full_35.jpg",
+    title: "Calor, Andaluzia — 2026"
   },
 
   // ... adiciona as tuas fotos de destaque aqui
