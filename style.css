@@ -5,12 +5,61 @@
   outline: red solid 0px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #fff;
   color: rgb(255, 255, 255);
 }
+
+.nav {
+    margin-bottom: 24px;
+}
+
+.nav a{
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.fotos {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: underline;
+}
+
+.albuns {
+  color: lightgray;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.albuns:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+.fotos2 {
+  color: lightgray;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.fotos2:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+.albuns2 {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+}
+
+
 
 main {
   width: 70%;
@@ -323,6 +372,7 @@ footer {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.85);
   margin-bottom: 24px;
+  text-decoration: none;
 }
 
 /* ══════════════════════════════════════════════════════════
