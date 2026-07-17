@@ -13,18 +13,18 @@ const images = [
     title: "Cabaret, Chapitô — 2026"
   },
   {
-    thumb: "img/2026DMT/thumbs/thumb_01.jpg",
-    full:  "img/2026DMT/full/full_01.jpg",
+    thumb: "img/2026dmt/thumbs/thumb_01.jpg",
+    full:  "img/2026dmt/full/full_01.jpg",
     title: "Dia Mundial do Teatro, Chapitô — 2026"
   },
   {
-    thumb: "img/2026DMT/thumbs/thumb_02.jpg",
+    thumb: "img/2026dmt/thumbs/thumb_02.jpg",
     full:  "img/2026DMT/full/full_02.jpg",
     title: "Dia Mundial do Teatro, Chapitô — 2026"
   },
   {
-    thumb: "img/2026DMT/thumbs/thumb_03.jpg",
-    full:  "img/2026DMT/full/full_03.jpg",
+    thumb: "img/2026dmt/thumbs/thumb_03.jpg",
+    full:  "img/2026dmt/full/full_03.jpg",
     title: "Dia Mundial do Teatro, Chapitô — 2026"
   },
   {
