@@ -52,46 +52,5 @@ const images = [
     full:  "img/2026mostra/full/full_10.jpg",
     title: "Mostra Técnica, Chapitô — 2026"
   },
-  {
-    thumb: "img/2026mostra/thumbs/thumb_11.jpg",
-    full:  "img/2026mostra/full/full_11.jpg",
-    title: "Mostra Técnica, Chapitô — 2026"
-  },
-  {
-    thumb: "img/2026mostra/thumbs/thumb_12.jpg",
-    full:  "img/2026mostra/full/full_12.jpg",
-    title: "Mostra Técnica, Chapitô — 2026"
-  },
-  {
-    thumb: "img/2026mostra/thumbs/thumb_13.jpg",
-    full:  "img/2026mostra/full/full_13.jpg",
-    title: "Mostra Técnica, Chapitô — 2026"
-  },
-  {
-    thumb: "img/2026mostra/thumbs/thumb_14.jpg",
-    full:  "img/2026mostra/full/full_14.jpg",
-    title: "Mostra Técnica, Chapitô — 2026"
-  },
-  {
-    thumb: "img/2026mostra/thumbs/thumb_15.jpg",
-    full:  "img/2026mostra/full/full_15.jpg",
-    title: "Mostra Técnica, Chapitô — 2026"
-  },
-  {
-    thumb: "img/2026mostra/thumbs/thumb_16.jpg",
-    full:  "img/2026mostra/full/full_16.jpg",
-    title: "Mostra Técnica, Chapitô — 2026"
-  },
-  {
-    thumb: "img/2026mostra/thumbs/thumb_17.jpg",
-    full:  "img/2026mostra/full/full_17.jpg",
-    title: "Mostra Técnica, Chapitô — 2026"
-  },
-  {
-    thumb: "img/2026mostra/thumbs/thumb_18.jpg",
-    full:  "img/2026mostra/full/full_18.jpg",
-    title: "Mostra Técnica, Chapitô — 2026"
-  },
-  
   // ... adiciona as tuas fotos de destaque aqui
 ];

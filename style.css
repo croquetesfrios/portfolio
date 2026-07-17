@@ -143,7 +143,6 @@ footer {
   main { width: 95%; margin: auto; padding-top: 12px;}
   .gallery { column-count: 2; column-gap: 10px;}
   .item { margin-bottom: 10px; }
-  .nav a {font-size: .9rem; }
 }
 
 

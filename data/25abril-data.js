@@ -47,26 +47,5 @@ const images = [
     full:  "img/202625abril/full/full_09.jpg",
     title: "25 de Abril, Chapitô — 2026"
   },
-  {
-    thumb: "img/202625abril/thumbs/thumb_10.jpg",
-    full:  "img/202625abril/full/full_10.jpg",
-    title: "25 de Abril, Chapitô — 2026"
-  },
-  {
-    thumb: "img/202625abril/thumbs/thumb_11.jpg",
-    full:  "img/202625abril/full/full_11.jpg",
-    title: "25 de Abril, Chapitô — 2026"
-  },
-  {
-    thumb: "img/202625abril/thumbs/thumb_12.jpg",
-    full:  "img/202625abril/full/full_12.jpg",
-    title: "25 de Abril, Chapitô — 2026"
-  },
-  {
-    thumb: "img/202625abril/thumbs/thumb_13.jpg",
-    full:  "img/202625abril/full/full_13.jpg",
-    title: "25 de Abril, Chapitô — 2026"
-  },
-  
   // ... adiciona as tuas fotos de destaque aqui
 ];
