@@ -19,7 +19,7 @@ const images = [
   },
   {
     thumb: "img/2026dmt/thumbs/thumb_02.jpg",
-    full:  "img/2026DMT/full/full_02.jpg",
+    full:  "img/2026dmt/full/full_02.jpg",
     title: "Dia Mundial do Teatro, Chapitô — 2026"
   },
   {
