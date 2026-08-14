@@ -12,12 +12,26 @@ html {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #fff;
-  color: rgb(255, 255, 255);
+  background-color: #FAFAFA;
+  color: #1B1B1B;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+  opacity: 0.2;
+  z-index: -1;
 }
 
 .nav {
-    margin-bottom: 24px;
+    padding: 64px 24px 24px 0px;
+    text-align: center;
 }
 
 .nav a{
@@ -25,23 +39,25 @@ body {
   align-items: center;
   padding: 10px 10px;
   font-weight: bold;
-  font-size: 1.2rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
+
 .fotos {
-  color: rgba(0, 0, 0, 1);
+  color: #1b1b1b;
   text-decoration: underline;
+  font-size: 1.2rem;
 }
 
 .albuns {
   color: lightgray;
   transition: color 0.2s ease;
   text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .albuns:hover {
-  color: rgb(0, 0, 0);
+  color: #1b1b1b;
   text-decoration: underline;
 }
 
@@ -49,23 +65,25 @@ body {
   color: lightgray;
   text-decoration: none;
   transition: color 0.2s ease;
+  font-size: 1.2rem;
 }
 .fotos2:hover {
   color: rgb(0, 0, 0);
   text-decoration: underline;
 }
 .albuns2 {
-  color: rgb(0, 0, 0);
+  color: #1b1b1b;
   text-decoration: underline;
+  font-size: 1.2rem;
 }
 
 
 
 main {
-  width: 70%;
+  width: 99%;
   margin: auto;
-  padding-top: 30px;
 }
+
 
 /* quando entra no ecrã */
 .item.show {
@@ -77,41 +95,41 @@ main {
 .item img {
   width: 100%;
   display: block;
-  transition: transform 0.4s ease;
+  transition: transform 0.2s ease;
 }
 
 footer {
   text-align: center;
-  padding: 10px;
-  color: rgb(0, 0, 0);
+  padding: 84px 0px 12px;
+  color: #1B1B1B;
   font-size: 0.9rem;
 }
 
 
 .gallery {
   columns: 3;
-  column-gap: 16px;
+  column-gap: 10px;
+  margin-bottom: 48px;
 }
 
 .item {
   break-inside: avoid;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   position: relative;
   overflow: hidden;
-  border-radius: 0px;
 }
 
 /* Imagem */
 .item img {
   width: 100%;
   display: block;
-  transition: transform 0.4s ease;
+  transition: transform 0.3s ease;
   cursor: pointer;
 }
 
 /* Hover */
 .item:hover img {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 /* Overlay opcional */
@@ -131,18 +149,21 @@ footer {
   opacity: 1;
 }
 
-
-/* ── Responsivo ───────────────────────────────────────── */
-@media (max-width: 1324px) {
-  main { width: 88%; margin: auto; padding-top: 20px; }
-  .gallery { column-count: 3; column-gap: 12px;}
-  .item { margin-bottom: 12px; }
+.breadcrumb {
+  margin-top: 50px;
 }
 
-@media (max-width: 600px) {
-  main { width: 95%; margin: auto; padding-top: 12px;}
-  .gallery { column-count: 2; column-gap: 10px;}
-  .item { margin-bottom: 10px; }
+.breadcrumb a {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, .8);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -177,17 +198,17 @@ footer {
 .viewer-inner {
   width: 100%;
   height: 100%;
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding: 60px 50px 60px;
+  padding: 24px 54px 24px; /* já sem precisar de margem extra em baixo */
 }
 
 .viewer-stage {
-  width: 100%;
-  height: calc(100vh - 160px);
+  height: calc(100vh - 48px);
+  width: auto;
   overflow: hidden;
   position: relative;
 }
@@ -203,8 +224,7 @@ footer {
 
 .viewer-slide {
   width: 33.3333%;
-  height: 100%;
-  padding: 0 12px;
+  height: 100%; 
   flex-shrink: 0;
   object-fit: contain;
   user-select: none;
@@ -214,22 +234,40 @@ footer {
 
 /* Rodapé: título + contador */
 .viewer-meta {
+  width: 500px;
+  height: 100%;
+  padding: 24px;
+
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  margin-top: 14px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
   gap: 16px;
+
+  overflow: hidden;
+}
+
+.viewer-meta-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  min-width: 0;
 }
 
 .viewer-title {
   color: rgba(0, 0, 0, 0.8);
   font-size: 1rem;
+  font-weight: bold;
   letter-spacing: 0.08em;
+
   text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: normal;
+
+  min-width: 0;
 }
 
 .viewer-counter {
@@ -238,17 +276,19 @@ footer {
   letter-spacing: 0.06em;
   white-space: nowrap;
   flex-shrink: 0;
+
 }
 
 /* ── Botão fechar ──────────────────────────────────────── */
 .viewer-close {
   position: absolute;
-  top: 18px;
-  right: 22px;
+  top: 24px;
+  left: 44px;
   background: none;
   border: none;
   color: rgba(0, 0, 0, 0.8);
-  font-size: 1.3rem;
+  font-size: 1rem;
+  font-weight: bold;
   line-height: 1;
   cursor: pointer;
   padding: 10px;
@@ -259,7 +299,7 @@ footer {
   justify-content: center;
 }
 
-.viewer-close:hover  { color: #fff; }
+.viewer-close:hover  { color: rgba(0, 0, 0, 0.5);  text-decoration: underline;}
 .viewer-close:focus  { outline: none; }
 
 /* ── Setas de navegação ────────────────────────────────── */
@@ -288,112 +328,10 @@ footer {
 .viewer-prev { left: 0; }
 .viewer-next { right: 0; }
 
-/* ── Responsivo mobile ─────────────────────────────────── */
-@media (max-width: 600px) {
+/* ── Navegação mobile/tablet ─────────────────────────── */
 
-  .viewer-inner {
-    width: 100%;
-    padding: 60px 16px 80px;
-  }
-
-  .viewer-stage {
-    height: calc(100vh - 190px);
-  }
-
-  .viewer-track {
-    height: 100%;
-  }
-  
-   .viewer-slide {
-    height: 100%;
-  }
-  
-  .viewer-nav {
-    position: fixed;
-    top: auto;
-    bottom: 0;
-    transform: none;
-    width: 50%;
-    padding: 16px 24px;
-    min-height: 56px;
-    box-sizing: border-box;
-  }
-  .viewer-prev {
-    left: 0;
-    justify-content: flex-start;
-  }
-  .viewer-next {
-    right: 0;
-    justify-content: flex-end;
-  }
-  .viewer-meta {
-    padding: 0 4px;
-    margin-top: 10px;
-  }
-  .viewer-title {
-    font-size: 0.72rem;
-  }
-  .viewer-counter {
-    font-size: 0.70rem;
-  }
-}
-
-
-/* ══════════════════════════════════════════════════════════
-   BOTÃO VER MAIS
-   ══════════════════════════════════════════════════════════ */
-
-.ver-mais-wrap {
-  text-align: center;
-  padding: 48px 0 24px;
-}
-
-.btn-ver-mais {
-  display: inline-block;
-  color: rgba(0, 0, 0, 0.55);
-  text-decoration: none;
-  font-family: Arial, sans-serif;
-  font-size: 0.85rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  padding-bottom: 3px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
-  transition: color 0.2s ease, border-color 0.2s ease;
-}
-
-.btn-ver-mais:hover {
-  color: rgba(0, 0, 0, 0.9);
-  border-color: rgba(0, 0, 0, 0.7);
-}
-
-.title {
-  font-size: 1.2rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.85);
-  margin-bottom: 24px;
-  text-decoration: none;
-}
-
-/* ══════════════════════════════════════════════════════════
-   BREADCRUMB (voltar / eventos)
-   ══════════════════════════════════════════════════════════ */
-
-.breadcrumb {
-  padding: 24px 0 20px;
-}
-
-.breadcrumb a {
-  color: rgba(0, 0, 0, 0.65);
-  text-decoration: none;
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  transition: color 0.2s ease;
-}
-
-.breadcrumb a:hover {
-  color: rgba(0, 0, 0, 1);
+.viewer-nav-mobile {
+  display: none;
 }
 
 
@@ -405,7 +343,8 @@ footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  padding-bottom: 48px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .evento-card {
@@ -432,6 +371,7 @@ footer {
 
 .evento-card:hover .evento-thumb img {
   transform: scale(1.03);
+  opacity: 0.9;
 }
 
 .evento-info {
@@ -454,24 +394,132 @@ footer {
   color: rgba(0, 0, 0, 0.4);
 }
 
-
-/* ── Responsivo eventos ────────────────────────────────── */
-@media (max-width: 1324px) {
-  .eventos-grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-  }
-}
+/* ── Responsivo ───────────────────────────────────────── */
 
 @media (max-width: 600px) {
+  main, .eventos{ width: 98%; margin: auto;}
+  .gallery { column-count: 2; column-gap: 5px; margin-bottom: 0px;}
+  .item { margin-bottom: 5px; }
+  .fotos, .albuns, .fotos2, .albuns2 { font-size: 1rem; }
+  .overlay { display: none; }
+}
+
+@media (max-width: 1000px) {
+    .eventos-grid {grid-template-columns: repeat(2, 1fr);}
+    
+}
+
+@media (max-width: 1324px) {
+
+  .gallery {  column-gap: 5px;}
+  .item { margin-bottom: 5px; }
+  .nav hr { padding: 12px 0px 12px 0px; }
+
+  .viewer-inner {
+    flex-direction: column;
+    padding: 54px 10px 10px;
+  }
+
+.viewer-close {
+  top: 10px;
+  left: 44px;
+}
+
+  .viewer-stage {
+    order: 1;
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+  }
+
+  .viewer-meta {
+    order: 2;
+    width: 100%;
+    height: auto;
+
+    padding: 12px 16px;
+
+    display: grid;
+    grid-template-columns: 44px 1fr 44px;
+    align-items: center;
+
+    gap: 8px;
+  }
+
+  /* ── Esconde as setas laterais desktop ───────────── */
+
+  .viewer-prev,
+  .viewer-next {
+    display: none;
+  }
+
+  /* ── Mostra as novas setas dentro do meta ────────── */
+
+  .viewer-nav-mobile {
+    display: flex;
+
+    position: static;
+    transform: none;
+
+    width: 44px;
+    height: 44px;
+
+    min-width: 44px;
+    min-height: 44px;
+
+    padding: 8px;
+
+    background: none;
+    border: none;
+
+    color: rgba(0, 0, 0, 0.8);
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+  }
+
+  .viewer-nav-mobile:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .viewer-nav-mobile:focus {
+    outline: none;
+  }
+
+  .viewer-title {
+  font-size: 0.85rem;
+}
+
+.viewer-counter {
+  font-size: 0.8rem;
+}
+
+  /* ── Informação fica no centro ───────────────────── */
+
+  .viewer-meta-info {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 6px;
+
+  text-align: left;
+}
+
+  .viewer-title {
+    min-width: 0;
+  }
+
+  .viewer-counter {
+    flex-shrink: 0;
+  }
+
   .eventos-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-  }
-  .evento-nome {
-    font-size: 0.75rem;
-  }
-  .evento-detalhe {
-    font-size: 0.68rem;
+    gap: 8px;
+    max-width: 100%;
   }
 }

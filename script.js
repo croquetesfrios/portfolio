@@ -227,7 +227,7 @@ function updateCounter() {
 }
 
 
-// ── Botões ─────────────────────────────────────────────
+// ── Botões ──────────────────────────────────────────────
 document
   .getElementById("viewerClose")
   .addEventListener(
@@ -244,6 +244,20 @@ document
 
 document
   .getElementById("viewerNext")
+  .addEventListener(
+    "click",
+    () => navigate(1)
+  );
+
+document
+  .getElementById("viewerPrevMobile")
+  .addEventListener(
+    "click",
+    () => navigate(-1)
+  );
+
+document
+  .getElementById("viewerNextMobile")
   .addEventListener(
     "click",
     () => navigate(1)
