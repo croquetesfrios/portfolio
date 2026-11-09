@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>jmendes · João Mendes</title><!-- Escolhe um estilo ao acaso (nunca repete o último) e aplica-o antes de desenhar a página --><script>
+      (function () {
+        var T = ['neo', 'minimalista', 'editorial', 'mono'], l = -1;
+        try { l = T.indexOf(localStorage.getItem('tema')); } catch (e) {}
+        var i; do { i = Math.floor(Math.random() * T.length); } while (i === l);
+        window.__tema = T[i];
+        try { localStorage.setItem('tema', T[i]); } catch (e) {}
+        var ap = function () {
+          document.documentElement.dataset.tema = window.__tema;
+          document.querySelectorAll('[data-t]').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.t === window.__tema); });
+        };
+        window.setTema = function (t) { window.__tema = t; ap(); try { localStorage.setItem('tema', t); } catch (e) {} };
+        ap();
+        document.addEventListener('DOMContentLoaded', ap);
+        document.addEventListener('astro:after-swap', ap);
+      })();
+    </script><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CKq7OsbX.js"></script><link rel="stylesheet" href="/_astro/areas.BnFfVWfv.css"><style>[data-astro-transition-scope="astro-gyrtbwwo-1"] { view-transition-name: page; }@layer astro { ::view-transition-old(page) { 
+	animation-duration: .5s;
+	animation-fill-mode: both;
+	animation-name: hold; }::view-transition-new(page) { 
+	animation-duration: .5s;
+	animation-timing-function: cubic-bezier(.2,.7,.2,1);
+	animation-fill-mode: both;
+	animation-name: slideIn; }[data-astro-transition=back]::view-transition-old(page) { 
+	animation-duration: .4s;
+	animation-timing-function: cubic-bezier(.5,0,.8,.4);
+	animation-fill-mode: both;
+	animation-name: slideOut; }[data-astro-transition=back]::view-transition-new(page) { 
+	animation-duration: .4s;
+	animation-fill-mode: both;
+	animation-name: hold; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-gyrtbwwo-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-gyrtbwwo-1"] { 
+	animation-duration: .5s;
+	animation-fill-mode: both;
+	animation-name: hold; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-gyrtbwwo-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-gyrtbwwo-1"] { 
+	animation-duration: .5s;
+	animation-timing-function: cubic-bezier(.2,.7,.2,1);
+	animation-fill-mode: both;
+	animation-name: slideIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-gyrtbwwo-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-gyrtbwwo-1"] { 
+	animation-duration: .4s;
+	animation-timing-function: cubic-bezier(.5,0,.8,.4);
+	animation-fill-mode: both;
+	animation-name: slideOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-gyrtbwwo-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-gyrtbwwo-1"] { 
+	animation-duration: .4s;
+	animation-fill-mode: both;
+	animation-name: hold; }</style></head><body><header><a href="/">João Mendes</a><nav><a href="/#sobre">Sobre</a><a href="/#contacto">Contacto</a></nav></header><main data-astro-transition-scope="astro-gyrtbwwo-1"><section class="w-top"><a class="pill back" href="/web/">Voltar a Web dev</a><h1 class="ttl">jmendes</h1><span>Web dev, portfólio, 2026</span><p>Desenho e desenvolvimento do site.</p><a class="pill" href="https://jmendes.pt" target="_blank" rel="noopener">Visitar site</a></section><div class="bar"><div class="bar-in"><span>jmendes</span><a class="pill" href="/web/">Voltar</a></div></div><div class="webs"><img src="/_astro/localhost_4321_.VHoxK51k_cb77Y.webp" srcset="/_astro/localhost_4321_.VHoxK51k_1dYxC8.webp 800w, /_astro/localhost_4321_.VHoxK51k_Z1YHhOq.webp 1400w, /_astro/localhost_4321_.VHoxK51k_cb77Y.webp 1418w" alt="Captura de jmendes" sizes="100vw" loading="lazy" decoding="async" width="1418" height="914"></div><a class="next" href="/web/goodwill/"><span>Seguinte</span><h2 class="ttl">GOODWILL</h2></a></main><footer><div class="more"><div class="fcols"><div><p class="fbig">João Mendes</p><p>Fotografia, vídeo, design e web dev.</p></div><div class="ls"><a href="#" id="totop">Voltar ao topo</a></div></div></div><div class="frow"><span>© 2026 João Mendes</span><span class="temas"><button type="button" data-t="neo" onclick="setTema(this.dataset.t)">Neo-Grotesco</button><button type="button" data-t="minimalista" onclick="setTema(this.dataset.t)">Minimalista</button><button type="button" data-t="editorial" onclick="setTema(this.dataset.t)">Editorial</button><button type="button" data-t="mono" onclick="setTema(this.dataset.t)">Mono</button></span></div></footer><script type="module" src="/_astro/Base.astro_astro_type_script_index_0_lang.CZUnQwx8.js"></script></body></html>

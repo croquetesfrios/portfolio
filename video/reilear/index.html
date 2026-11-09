@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Rei Lear · João Mendes</title><!-- Escolhe um estilo ao acaso (nunca repete o último) e aplica-o antes de desenhar a página --><script>
+      (function () {
+        var T = ['neo', 'minimalista', 'editorial', 'mono'], l = -1;
+        try { l = T.indexOf(localStorage.getItem('tema')); } catch (e) {}
+        var i; do { i = Math.floor(Math.random() * T.length); } while (i === l);
+        window.__tema = T[i];
+        try { localStorage.setItem('tema', T[i]); } catch (e) {}
+        var ap = function () {
+          document.documentElement.dataset.tema = window.__tema;
+          document.querySelectorAll('[data-t]').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.t === window.__tema); });
+        };
+        window.setTema = function (t) { window.__tema = t; ap(); try { localStorage.setItem('tema', t); } catch (e) {} };
+        ap();
+        document.addEventListener('DOMContentLoaded', ap);
+        document.addEventListener('astro:after-swap', ap);
+      })();
+    </script><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CKq7OsbX.js"></script><link rel="stylesheet" href="/_astro/areas.BnFfVWfv.css"><style>[data-astro-transition-scope="astro-gyrtbwwo-1"] { view-transition-name: page; }@layer astro { ::view-transition-old(page) { 
+	animation-duration: .5s;
+	animation-fill-mode: both;
+	animation-name: hold; }::view-transition-new(page) { 
+	animation-duration: .5s;
+	animation-timing-function: cubic-bezier(.2,.7,.2,1);
+	animation-fill-mode: both;
+	animation-name: slideIn; }[data-astro-transition=back]::view-transition-old(page) { 
+	animation-duration: .4s;
+	animation-timing-function: cubic-bezier(.5,0,.8,.4);
+	animation-fill-mode: both;
+	animation-name: slideOut; }[data-astro-transition=back]::view-transition-new(page) { 
+	animation-duration: .4s;
+	animation-fill-mode: both;
+	animation-name: hold; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-gyrtbwwo-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-gyrtbwwo-1"] { 
+	animation-duration: .5s;
+	animation-fill-mode: both;
+	animation-name: hold; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-gyrtbwwo-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-gyrtbwwo-1"] { 
+	animation-duration: .5s;
+	animation-timing-function: cubic-bezier(.2,.7,.2,1);
+	animation-fill-mode: both;
+	animation-name: slideIn; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-gyrtbwwo-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-gyrtbwwo-1"] { 
+	animation-duration: .4s;
+	animation-timing-function: cubic-bezier(.5,0,.8,.4);
+	animation-fill-mode: both;
+	animation-name: slideOut; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-gyrtbwwo-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-gyrtbwwo-1"] { 
+	animation-duration: .4s;
+	animation-fill-mode: both;
+	animation-name: hold; }</style></head><body><header><a href="/">João Mendes</a><nav><a href="/#sobre">Sobre</a><a href="/#contacto">Contacto</a></nav></header><main data-astro-transition-scope="astro-gyrtbwwo-1"><section class="w-top"><a class="pill back" href="/video/">Voltar a Vídeo</a><h1 class="ttl">Rei Lear</h1><span>Vídeo, Chapitô, 2026</span><p>Spot televisivo da estreia da peça: Rei Lear. Da companhia do Chapitô</p></section><div class="bar"><div class="bar-in"><span>Rei Lear</span><a class="pill" href="/video/">Voltar</a></div></div><div class="vids"><div class="yt" data-id="TjncFyNDUL8" style="background-image:url(https://i.ytimg.com/vi/TjncFyNDUL8/hqdefault.jpg)"><button type="button" aria-label="Reproduzir vídeo"><svg viewBox="0 0 24 24" width="56" height="56" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg></button></div></div><a class="next" href="/video/ensaiosobrealucidez/"><span>Seguinte</span><h2 class="ttl">Ensaio sobre a Lucidez</h2></a></main><footer><div class="more"><div class="fcols"><div><p class="fbig">João Mendes</p><p>Fotografia, vídeo, design e web dev.</p></div><div class="ls"><a href="#" id="totop">Voltar ao topo</a></div></div></div><div class="frow"><span>© 2026 João Mendes</span><span class="temas"><button type="button" data-t="neo" onclick="setTema(this.dataset.t)">Neo-Grotesco</button><button type="button" data-t="minimalista" onclick="setTema(this.dataset.t)">Minimalista</button><button type="button" data-t="editorial" onclick="setTema(this.dataset.t)">Editorial</button><button type="button" data-t="mono" onclick="setTema(this.dataset.t)">Mono</button></span></div></footer><script type="module" src="/_astro/Base.astro_astro_type_script_index_0_lang.CZUnQwx8.js"></script></body></html>
